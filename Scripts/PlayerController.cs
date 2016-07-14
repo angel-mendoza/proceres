@@ -5,6 +5,7 @@ public class PlayerController : MonoBehaviour {
 
     public float moveSpeed;
     public float jumpHeight;
+    private float moveVelocity; 
 
     public Transform groundCheck;
     public float grounsCheckRadius;
@@ -49,16 +50,22 @@ public class PlayerController : MonoBehaviour {
             doubleJumped = true; 
         }
 
-//------codigo para que camine----------------------------
+        //------codigo para que camine----------------------------
+
+        moveVelocity = 0f;
 
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+            //GetComponent<Rigidbody2D>().velocity = new Vector2(moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+            moveVelocity = moveSpeed;
         }
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+            //GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+            moveVelocity = -moveSpeed;
         }
+
+        GetComponent<Rigidbody2D>().velocity = new Vector2(moveVelocity, GetComponent<Rigidbody2D>().velocity.y);
 
         anim.SetFloat("Speed", Mathf.Abs(GetComponent<Rigidbody2D>().velocity.x));
 
@@ -67,7 +74,7 @@ public class PlayerController : MonoBehaviour {
         else if (GetComponent<Rigidbody2D>().velocity.x < 0)
             transform.localScale = new Vector3(-7f, 7f, 1f);
     }
-
+    //-----funsion para saltar------------
     public void jump()
     {
         GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpHeight);
