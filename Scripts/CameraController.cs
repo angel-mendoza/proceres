@@ -3,22 +3,22 @@ using System.Collections;
 
 public class CameraController : MonoBehaviour {
 
-    public PlayerController thePlayer;
-    private Vector3 lastPlayerPosition;
-    private float distanceToMove;
+    public PlayerController player;
+    public bool isFollowing;
+    public float xOffSet;
+    public float yOffSet;
 
-	// Use this for initialization
-	void Start () {
-        thePlayer = FindObjectOfType<PlayerController>();
-        lastPlayerPosition = thePlayer.transform.position;
+    // Use this for initialization
+    void Start () {
+        player = FindObjectOfType<PlayerController>();
+        isFollowing = true;
     }
 	
 	// Update is called once per frame
 	void Update () {
-        distanceToMove = thePlayer.transform.position.x - lastPlayerPosition.x;
-        transform.position = new Vector3(transform.position.x + distanceToMove, transform.position.y, transform.position.z);
-
-
-        lastPlayerPosition = thePlayer.transform.position;
+        if (isFollowing)
+        {
+            transform.position = new Vector3(player.transform.position.x + xOffSet , player.transform.position.y + yOffSet, transform.position.z);
+        }
 	}
 }

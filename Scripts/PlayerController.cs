@@ -16,10 +16,13 @@ public class PlayerController : MonoBehaviour {
 
     private Animator anim;
 
+    public Transform firePoints;
+    public GameObject bala;
 
 	// Use this for initialization
 	void Start () {
         anim = GetComponent<Animator>();
+        
 	}
 
     void FixedUpdate(){
@@ -73,6 +76,13 @@ public class PlayerController : MonoBehaviour {
             transform.localScale = new Vector3(7f, 7f, 1f);
         else if (GetComponent<Rigidbody2D>().velocity.x < 0)
             transform.localScale = new Vector3(-7f, 7f, 1f);
+
+        //----------disparar------------------
+
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            Instantiate(bala, firePoints.position, firePoints.rotation);
+        }
     }
     //-----funsion para saltar------------
     public void jump()

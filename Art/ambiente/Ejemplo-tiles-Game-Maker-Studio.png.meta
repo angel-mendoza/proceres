@@ -1,11 +1,12 @@
 fileFormatVersion: 2
 guid: fe89e8a1cb3a33640ba7cdec89a5db65
-timeCreated: 1467740648
+timeCreated: 1468880222
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: Ground
     21300002: GROUND
+    21300004: bala
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -28,10 +29,10 @@ TextureImporter:
   cubemapConvolutionSteps: 7
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
+    filterMode: 0
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -84,6 +85,17 @@ TextureImporter:
         - {x: -35, y: -35.5}
         - {x: 35, y: -35.5}
         - {x: 35, y: 35.5}
+    - name: bala
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 807
+        width: 24
+        height: 26
+      alignment: 9
+      pivot: {x: 0.70880127, y: 0.40719944}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     outline: []
   spritePackingTag: 
   userData: 
