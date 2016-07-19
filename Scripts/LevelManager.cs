@@ -18,10 +18,13 @@ public class LevelManager : MonoBehaviour {
 
     private CameraController camara;
 
+    public HealthManager healthManager;
+
     // Use this for initialization
     void Start () {
         player = FindObjectOfType<PlayerController>();
         camara = FindObjectOfType<CameraController>();
+        healthManager = FindObjectOfType<HealthManager>();
 	}
 	
 	// Update is called once per frame
@@ -49,6 +52,8 @@ public class LevelManager : MonoBehaviour {
         player.transform.position = currentCheckPoint.transform.position;
         player.enabled = true;
         player.GetComponent<Renderer>().enabled = true;
+        healthManager.FullHealth();
+        healthManager.isDead = false;
         camara.isFollowing = true;
         Instantiate(LiveParticle, currentCheckPoint.transform.position, currentCheckPoint.transform.rotation);
     }

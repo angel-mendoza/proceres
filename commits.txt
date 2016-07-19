@@ -1,0 +1,17 @@
+commit 7d801192215dcd1cbc2c7772490c0de4e684a4ec
+Author: Angel Mendoza <mendozaangel003@gmail.com>
+Date:   Mon Jul 18 18:38:22 2016 -0430
+
+    el personaje dispara y elimina a sus enemigos, la bala no coliciona con los otros elementos de la esena solo con el enemigo
+
+commit 53a11245175a3da5357215c59d97789d17fe46d4
+Author: Angel Mendoza <mendozaangel003@gmail.com>
+Date:   Thu Jul 14 19:29:38 2016 -0430
+
+    me quede en el video 9, el contador del score ya esta funcional y el enemigo camina sin caer o tropesar, las monedas estan funcionando, y si caes del borde del ground mueres y renaces
+
+commit 512906f382724fcc872123af4c9223f6b1792d39
+Author: Angel Mendoza <mendozaangel003@gmail.com>
+Date:   Thu Jul 7 16:04:59 2016 -0430
+
+    esta version es el inicio del proyecto, ya tengo el demo, personaje solo camina y salta pero las estacas te matan y la camara te sigue, ya esta listo el efecto de particulas cuando mueres y cuando renaces

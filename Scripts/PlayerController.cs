@@ -19,6 +19,9 @@ public class PlayerController : MonoBehaviour {
     public Transform firePoints;
     public GameObject bala;
 
+    public float shotDelay;
+    private float shotDelayCounter;
+
 	// Use this for initialization
 	void Start () {
         anim = GetComponent<Animator>();
@@ -82,7 +85,17 @@ public class PlayerController : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Z))
         {
             Instantiate(bala, firePoints.position, firePoints.rotation);
+            shotDelayCounter = shotDelay;
         }
+       // if (Input.GetKey(KeyCode.Z))
+ //       {
+   //         shotDelayCounter -= Time.deltaTime;
+     //       if (shotDelayCounter <= 0)
+       //     {
+        //        shotDelayCounter = shotDelay;
+      //          Instantiate(bala, firePoints.position, firePoints.rotation);
+        //    }
+        //}
     }
     //-----funsion para saltar------------
     public void jump()
