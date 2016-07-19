@@ -4,6 +4,7 @@ using System.Collections;
 public class CoinPickup : MonoBehaviour {
 
     public int pointsToAdd;
+    public AudioSource coinSoundsEffect;
 
     void OnTriggerEnter2D (Collider2D other)
     {
@@ -11,6 +12,7 @@ public class CoinPickup : MonoBehaviour {
             return;
 
         ScoreManager.AddPoints(pointsToAdd);
+        coinSoundsEffect.Play();
         Destroy(gameObject); 
     }
 }

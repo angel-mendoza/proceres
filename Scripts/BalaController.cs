@@ -41,6 +41,7 @@ public class BalaController : MonoBehaviour {
             // ScoreManager.AddPoints(pointsForKill);
 
             other.GetComponent<EnemyHealthManager>().giveDamage(damageToGive);
+
         }
         Destroy(gameObject);
     }
