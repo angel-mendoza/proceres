@@ -22,8 +22,13 @@ public class PlayerController : MonoBehaviour {
     public float shotDelay;
     private float shotDelayCounter;
 
-	// Use this for initialization
-	void Start () {
+    public float knockback;
+    public float knockbackLength;
+    public float knockbackCount;
+    public bool knockFromRigth;
+
+    // Use this for initialization
+    void Start () {
         anim = GetComponent<Animator>();
         
 	}
@@ -71,7 +76,23 @@ public class PlayerController : MonoBehaviour {
             moveVelocity = -moveSpeed;
         }
 
-        GetComponent<Rigidbody2D>().velocity = new Vector2(moveVelocity, GetComponent<Rigidbody2D>().velocity.y);
+        if (knockbackCount <= 0)
+        {
+            GetComponent<Rigidbody2D>().velocity = new Vector2(moveVelocity, GetComponent<Rigidbody2D>().velocity.y);
+        }else
+        {
+            if (knockFromRigth)
+            {
+                GetComponent<Rigidbody2D>().velocity = new Vector2(-knockback, knockback);
+            }
+
+            if (!knockFromRigth)
+            {
+                GetComponent<Rigidbody2D>().velocity = new Vector2(knockback, -knockback);
+            }
+            knockbackCount -= Time.deltaTime;
+        }
+       
 
         anim.SetFloat("Speed", Mathf.Abs(GetComponent<Rigidbody2D>().velocity.x));
 
@@ -87,15 +108,17 @@ public class PlayerController : MonoBehaviour {
             Instantiate(bala, firePoints.position, firePoints.rotation);
             shotDelayCounter = shotDelay;
         }
-       // if (Input.GetKey(KeyCode.Z))
- //       {
-   //         shotDelayCounter -= Time.deltaTime;
-     //       if (shotDelayCounter <= 0)
-       //     {
-        //        shotDelayCounter = shotDelay;
-      //          Instantiate(bala, firePoints.position, firePoints.rotation);
-        //    }
-        //}
+
+        //----regula que solo puede disparar cada segundo
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            shotDelayCounter -= Time.deltaTime;
+            if (shotDelayCounter <= 0)
+            {
+                shotDelayCounter = shotDelay;
+                Instantiate(bala, firePoints.position, firePoints.rotation);
+            }
+        }
     }
     //-----funsion para saltar------------
     public void jump()
