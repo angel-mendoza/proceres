@@ -102,11 +102,15 @@ public class PlayerController : MonoBehaviour {
             transform.localScale = new Vector3(-7f, 7f, 1f);
 
         //----------disparar------------------
-
+        if (anim.GetBool("Disparo"))
+        {
+            anim.SetBool("Disparo", false);
+        }
         if (Input.GetKeyDown(KeyCode.Z))
         {
             Instantiate(bala, firePoints.position, firePoints.rotation);
             shotDelayCounter = shotDelay;
+            anim.SetBool("Disparo", true);
         }
 
         //----regula que solo puede disparar cada segundo
@@ -119,6 +123,22 @@ public class PlayerController : MonoBehaviour {
                 Instantiate(bala, firePoints.position, firePoints.rotation);
             }
         }
+
+
+
+        //--------ataque con la espada
+        if (anim.GetBool("Espada"))
+        {
+            anim.SetBool("Espada", false);
+        }
+        if (Input.GetKey(KeyCode.X))
+        {
+            anim.SetBool("Espada", true);
+        }
+
+
+
+
     }
     //-----funsion para saltar------------
     public void jump()

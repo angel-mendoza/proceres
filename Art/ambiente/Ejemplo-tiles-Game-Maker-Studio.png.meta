@@ -1,12 +1,13 @@
 fileFormatVersion: 2
 guid: fe89e8a1cb3a33640ba7cdec89a5db65
-timeCreated: 1468880222
+timeCreated: 1469494190
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: Ground
     21300002: GROUND
     21300004: bala
+    21300006: caja
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -96,6 +97,23 @@ TextureImporter:
       pivot: {x: 0.70880127, y: 0.40719944}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+    - name: caja
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 502
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35.5}
+        - {x: -35, y: -33.5}
+        - {x: -33, y: -35.5}
+        - {x: 33, y: -35.5}
+        - {x: 35, y: -33.5}
+        - {x: 35, y: 35.5}
     outline: []
   spritePackingTag: 
   userData: 
