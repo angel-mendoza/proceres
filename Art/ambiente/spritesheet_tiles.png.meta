@@ -1,10 +1,12 @@
 fileFormatVersion: 2
 guid: 227c9acd54df78c44b3b1d0818f07d1c
-timeCreated: 1462934241
+timeCreated: 1469570714
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: estacas
+    21300002: salida
+    21300004: salida-cartel
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -68,6 +70,52 @@ TextureImporter:
         - {x: 62.5, y: -33}
         - {x: 62.5, y: -11}
         - {x: 52.5, y: 33}
+    - name: salida
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 512
+        width: 128
+        height: 201
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 43, y: 96.5}
+        - {x: 32, y: 100.5}
+        - {x: -39, y: 100.5}
+        - {x: -57, y: 85.5}
+        - {x: -64, y: 71.5}
+        - {x: -64, y: -100.5}
+        - {x: 64, y: -100.5}
+        - {x: 64, y: 71.5}
+    - name: salida-cartel
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1022
+        width: 128
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 64, y: 50.5}
+        - {x: 54, y: 56.5}
+        - {x: 19, y: 61.5}
+        - {x: -17, y: 61.5}
+        - {x: -54, y: 55.5}
+        - {x: -57, y: 54.5}
+        - {x: -63, y: 49.5}
+        - {x: -64, y: 48.5}
+        - {x: -64, y: -15.5}
+        - {x: -54, y: -22.5}
+        - {x: -16, y: -60.5}
+        - {x: -12, y: -61.5}
+        - {x: 14, y: -61.5}
+        - {x: 14, y: -59.5}
+        - {x: 58, y: -19.5}
+        - {x: 64, y: -14.5}
     outline: []
   spritePackingTag: 
   userData: 
