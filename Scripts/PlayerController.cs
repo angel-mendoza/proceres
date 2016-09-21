@@ -127,14 +127,16 @@ public class PlayerController : MonoBehaviour {
 
 
         //--------ataque con la espada
-        if (anim.GetBool("Espada"))
-        {
-            anim.SetBool("Espada", false);
-        }
-        if (Input.GetKey(KeyCode.X))
-        {
-            anim.SetBool("Espada", true);
-        }
+
+
+            //if (anim.GetBool("Espada"))
+        //{
+        //    anim.SetBool("Espada", false);
+        //}
+        //if (Input.GetKey(KeyCode.X))
+        //{
+        //    anim.SetBool("Espada", true);
+        //}
 
 
 
