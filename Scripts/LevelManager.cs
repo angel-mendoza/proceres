@@ -29,8 +29,8 @@ public class LevelManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
-	}
+
+    }
 
     public void RespawnPlayer(){
         StartCoroutine("RespawnPlayerCo");
@@ -57,5 +57,6 @@ public class LevelManager : MonoBehaviour {
         healthManager.isDead = false;
         camara.isFollowing = true;
         Instantiate(LiveParticle, currentCheckPoint.transform.position, currentCheckPoint.transform.rotation);
+
     }
 }

@@ -2,9 +2,16 @@
 using System.Collections;
 
 public class CoinPickup : MonoBehaviour {
-
+    public int cointsToAdd;
     public int pointsToAdd;
     public AudioSource coinSoundsEffect;
+
+    public GameObject moneda;
+
+    void Start()
+    {
+        moneda = GetComponent<GameObject>();
+    }
 
     void OnTriggerEnter2D (Collider2D other)
     {
@@ -12,6 +19,7 @@ public class CoinPickup : MonoBehaviour {
             return;
 
         ScoreManager.AddPoints(pointsToAdd);
+        CointsManager.AddCoints(cointsToAdd);
         coinSoundsEffect.Play();
         Destroy(gameObject); 
     }

@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class HealthManager : MonoBehaviour {
     public static int playerHealth;
 
+
     public int maxPlayerHealth;
 
     Text text;
@@ -24,7 +25,7 @@ public class HealthManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+
         if (playerHealth <= 0 && !isDead)
         {
             playerHealth = 0;
