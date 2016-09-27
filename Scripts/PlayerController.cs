@@ -5,7 +5,7 @@ public class PlayerController : MonoBehaviour {
 
     public float moveSpeed;
     public float jumpHeight;
-    private float moveVelocity; 
+    private float moveVelocity;
 
     public Transform groundCheck;
     public float grounsCheckRadius;
@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour {
     private bool doubleJumped;
 
     private Animator anim;
+    private Rigidbody2D myRB;
 
     public Transform firePoints;
     public GameObject bala;
@@ -28,19 +29,26 @@ public class PlayerController : MonoBehaviour {
     public float knockbackCount;
     public bool knockFromRigth;
 
-    // Use this for initialization
-    void Start () {
-        anim = GetComponent<Animator>();
-        
-	}
+    public bool onLadder;
+    public float climbSpeed;
+    private float climbVelocity;
+    private float gravityStore;
 
-    void FixedUpdate(){
+    // Use this for initialization
+    void Start() {
+        anim = GetComponent<Animator>();
+        myRB = GetComponent<Rigidbody2D>();
+        gravityStore = myRB.gravityScale;
+
+    }
+
+    void FixedUpdate() {
         grounded = Physics2D.OverlapCircle(groundCheck.position, grounsCheckRadius, whatIsGround);
     }
-	
-	// Update is called once per frame
-	void Update () {
-//-----codigo para que salte----------------------------
+
+    // Update is called once per frame
+    void Update() {
+        //-----codigo para que salte----------------------------
 
         if (grounded)
         {
@@ -48,39 +56,42 @@ public class PlayerController : MonoBehaviour {
         }
 
         anim.SetBool("Ground", grounded);
-            
-        if (Input.GetKeyDown (KeyCode.Space) && grounded)
+
+        if (Input.GetButtonDown("Jump") && grounded)
         {
             jump();
             //GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpHeight);
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && !doubleJumped && !grounded)
+        if (Input.GetButtonDown("Jump") && !doubleJumped && !grounded)
         {
             jump();
             //GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpHeight);
-            doubleJumped = true; 
+            doubleJumped = true;
         }
 
         //------codigo para que camine----------------------------
 
-        moveVelocity = 0f;
+        // moveVelocity = 0f;
+        /*
+                if (Input.GetKey(KeyCode.RightArrow))
+                {
+                    //GetComponent<Rigidbody2D>().velocity = new Vector2(moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+                    moveVelocity = moveSpeed;
+                }
+                if (Input.GetKey(KeyCode.LeftArrow))
+                {
+                    //GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+                    moveVelocity = -moveSpeed;
+                }
+        */
+        moveVelocity = moveSpeed * Input.GetAxisRaw("Horizontal");
 
-        if (Input.GetKey(KeyCode.RightArrow))
-        {
-            //GetComponent<Rigidbody2D>().velocity = new Vector2(moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
-            moveVelocity = moveSpeed;
-        }
-        if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            //GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
-            moveVelocity = -moveSpeed;
-        }
 
         if (knockbackCount <= 0)
         {
             GetComponent<Rigidbody2D>().velocity = new Vector2(moveVelocity, GetComponent<Rigidbody2D>().velocity.y);
-        }else
+        } else
         {
             if (knockFromRigth)
             {
@@ -93,7 +104,7 @@ public class PlayerController : MonoBehaviour {
             }
             knockbackCount -= Time.deltaTime;
         }
-       
+
 
         anim.SetFloat("Speed", Mathf.Abs(GetComponent<Rigidbody2D>().velocity.x));
 
@@ -107,7 +118,7 @@ public class PlayerController : MonoBehaviour {
         {
             anim.SetBool("Disparo", false);
         }
-        if (Input.GetKeyDown(KeyCode.Z))
+        if (Input.GetButtonDown("Fire1"))
         {
             Instantiate(bala, firePoints.position, firePoints.rotation);
             shotDelayCounter = shotDelay;
@@ -115,7 +126,7 @@ public class PlayerController : MonoBehaviour {
         }
 
         //----regula que solo puede disparar cada segundo
-        if (Input.GetKeyDown(KeyCode.Z))
+        if (Input.GetButtonDown("Fire1"))
         {
             shotDelayCounter -= Time.deltaTime;
             if (shotDelayCounter <= 0)
@@ -130,7 +141,7 @@ public class PlayerController : MonoBehaviour {
         //--------ataque con la espada
 
 
-            //if (anim.GetBool("Espada"))
+        //if (anim.GetBool("Espada"))
         //{
         //    anim.SetBool("Espada", false);
         //}
@@ -139,8 +150,17 @@ public class PlayerController : MonoBehaviour {
         //    anim.SetBool("Espada", true);
         //}
 
+        if (onLadder)
+        {
+            myRB.gravityScale = 0f;
+            climbVelocity = climbSpeed * Input.GetAxisRaw("Vertical");
+            myRB.velocity = new Vector2(myRB.velocity.x, climbVelocity);
+        }
 
-
+        if (!onLadder)
+        {
+            myRB.gravityScale = gravityStore;
+        }
 
     }
     //-----funsion para saltar------------

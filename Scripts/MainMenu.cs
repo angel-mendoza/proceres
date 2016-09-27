@@ -6,10 +6,22 @@ public class MainMenu : MonoBehaviour {
 
     public string starLeverl;
 
+    public int playerLive;
+
+    public int playerHealth;
+
     public void NewGame()
     {
-        SceneManager.LoadScene(starLeverl);
         
+        PlayerPrefs.SetInt("PlayerCurrentLives", playerLive);
+
+        PlayerPrefs.SetInt("CurrentPlayerCoints", 0);
+
+        PlayerPrefs.SetInt("PlayerCurrentHealth", playerHealth);
+
+        PlayerPrefs.SetInt("PlayerMaxHealth", playerHealth);
+
+        SceneManager.LoadScene(starLeverl);
     }
 
     public void QuitGame()
