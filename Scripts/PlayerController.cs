@@ -168,4 +168,21 @@ public class PlayerController : MonoBehaviour {
     {
         GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpHeight);
     }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.transform.tag == "MovingPlataform")
+        {
+            transform.parent = other.transform;
+        }
+    }
+
+
+    void OnCollisionExit2D(Collision2D other)
+    {
+        if (other.transform.tag == "MovingPlataform")
+        {
+            transform.parent = null;
+        }
+    }
 }
