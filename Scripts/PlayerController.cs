@@ -85,8 +85,8 @@ public class PlayerController : MonoBehaviour {
                     moveVelocity = -moveSpeed;
                 }
         */
-        moveVelocity = moveSpeed * Input.GetAxisRaw("Horizontal");
-
+        // moveVelocity = moveSpeed * Input.GetAxisRaw("Horizontal");
+        Move(Input.GetAxisRaw("Horizontal"));
 
         if (knockbackCount <= 0)
         {
@@ -112,7 +112,7 @@ public class PlayerController : MonoBehaviour {
             transform.localScale = new Vector3(7f, 7f, 1f);
         else if (GetComponent<Rigidbody2D>().velocity.x < 0)
             transform.localScale = new Vector3(-7f, 7f, 1f);
-
+#if UNITY_STANDALONE || UNITY_WEBPLAYER
         //----------disparar------------------
         if (anim.GetBool("Disparo"))
         {
@@ -120,7 +120,8 @@ public class PlayerController : MonoBehaviour {
         }
         if (Input.GetButtonDown("Fire1"))
         {
-            Instantiate(bala, firePoints.position, firePoints.rotation);
+            // Instantiate(bala, firePoints.position, firePoints.rotation);
+            Fire();
             shotDelayCounter = shotDelay;
             anim.SetBool("Disparo", true);
         }
@@ -132,7 +133,8 @@ public class PlayerController : MonoBehaviour {
             if (shotDelayCounter <= 0)
             {
                 shotDelayCounter = shotDelay;
-                Instantiate(bala, firePoints.position, firePoints.rotation);
+                Fire();
+                //Instantiate(bala, firePoints.position, firePoints.rotation);
             }
         }
 
@@ -149,7 +151,7 @@ public class PlayerController : MonoBehaviour {
         //{
         //    anim.SetBool("Espada", true);
         //}
-
+#endif
         if (onLadder)
         {
             myRB.gravityScale = 0f;
@@ -163,6 +165,20 @@ public class PlayerController : MonoBehaviour {
         }
 
     }
+
+    // controlles para dispositivos!
+
+    public void Move(float moveInput)
+    {
+        moveVelocity = moveSpeed * moveInput;
+    }
+
+    public void Fire()
+    {
+        Instantiate(bala, firePoints.position, firePoints.rotation);
+    }
+
+
     //-----funsion para saltar------------
     public void jump()
     {

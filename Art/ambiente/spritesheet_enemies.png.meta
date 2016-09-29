@@ -1,12 +1,14 @@
 fileFormatVersion: 2
 guid: 218ecc1ae15b13746bc5c10b964d9e22
-timeCreated: 1463026360
+timeCreated: 1475107145
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: enemies_0
     21300002: enemies_1
     21300004: enemies_dead
+    21300006: enemy-f-1
+    21300008: enemy-f-2
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -111,6 +113,40 @@ TextureImporter:
         - {x: 59, y: -49}
         - {x: 59, y: 38}
         - {x: 35, y: 59}
+    - name: enemy-f-1
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 1028
+        width: 103
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -51.5, y: 44}
+        - {x: -51.5, y: -34}
+        - {x: -17.5, y: -44}
+        - {x: 41.5, y: -44}
+        - {x: 51.5, y: -24}
+        - {x: 51.5, y: 44}
+    - name: enemy-f-2
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 1292
+        width: 111
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -55.5, y: 40}
+        - {x: -55.5, y: -16}
+        - {x: -28.5, y: -40}
+        - {x: 46.5, y: -40}
+        - {x: 55.5, y: -3}
+        - {x: 55.5, y: 40}
     outline: []
   spritePackingTag: 
   userData: 

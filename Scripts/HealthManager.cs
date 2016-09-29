@@ -8,7 +8,8 @@ public class HealthManager : MonoBehaviour {
 
    public int maxPlayerHealth;
 
-    Text text;
+    //Text text;
+    public Slider healthBar;
 
     private LevelManager levelmanager;
 
@@ -21,7 +22,8 @@ public class HealthManager : MonoBehaviour {
     // Use this for initialization
     void Start () {
         levelmanager = FindObjectOfType<LevelManager>();
-        text = GetComponent<Text>();
+        // text = GetComponent<Text>();
+        healthBar = GetComponent<Slider>();
 
         // playerHealth = maxPlayerHealth;
         playerHealth = PlayerPrefs.GetInt("PlayerCurrentHealth");
@@ -45,7 +47,12 @@ public class HealthManager : MonoBehaviour {
             theTime.ResetTiem();
         }
 
-        text.text = "" + playerHealth;
+        if (playerHealth > maxPlayerHealth)
+        {
+            playerHealth = maxPlayerHealth;
+        }
+        // text.text = "" + playerHealth;
+        healthBar.value = playerHealth;
 	}
 
     public static void HurtPlayer(int damageToGive)
