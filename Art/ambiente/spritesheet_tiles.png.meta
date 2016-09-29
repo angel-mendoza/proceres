@@ -1,12 +1,13 @@
 fileFormatVersion: 2
 guid: 227c9acd54df78c44b3b1d0818f07d1c
-timeCreated: 1469570714
+timeCreated: 1475138088
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: estacas
     21300002: salida
     21300004: salida-cartel
+    21300006: lock
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -116,6 +117,22 @@ TextureImporter:
         - {x: 14, y: -59.5}
         - {x: 58, y: -19.5}
         - {x: 64, y: -14.5}
+    - name: lock
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 639
+        width: 128
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 65}
+        - {x: -64, y: -65}
+        - {x: 59, y: -65}
+        - {x: 64, y: -60}
+        - {x: 64, y: 65}
     outline: []
   spritePackingTag: 
   userData: 
