@@ -30,5 +30,12 @@ public class FlyerEnemy : MonoBehaviour {
     {
  
         Gizmos.DrawSphere(transform.position, playerRange);
+        if (thePlayer.transform.position.x < transform.position.x)
+        {
+            GetComponent<Transform>().localScale = new Vector3(20f, 20f, 1f);
+        }else
+        {
+            GetComponent<Transform>().localScale = new Vector3(-20f, 20f, 1f);
+        }
     }
 }

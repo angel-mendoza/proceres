@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: fe89e8a1cb3a33640ba7cdec89a5db65
-timeCreated: 1475026563
+timeCreated: 1475271151
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -12,6 +12,7 @@ TextureImporter:
     21300010: p1
     21300012: p2
     21300014: p3
+    21300016: Ground-1
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -185,6 +186,21 @@ TextureImporter:
         - {x: 35, y: -18}
         - {x: 35, y: 18}
         - {x: 33, y: 20}
+    - name: Ground-1
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 786
+        width: 71
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35.5, y: 35}
+        - {x: -35.5, y: -35}
+        - {x: 35.5, y: -35}
+        - {x: 35.5, y: 35}
     outline: []
   spritePackingTag: 
   userData: 

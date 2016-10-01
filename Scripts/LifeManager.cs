@@ -34,7 +34,7 @@ public class LifeManager : MonoBehaviour {
             player.gameObject.SetActive(false);
         }
 
-        theText.text = "x " + lifeCounter;
+        theText.text = "" + lifeCounter;
 
         if (gameOverScreen.activeSelf)
         {
