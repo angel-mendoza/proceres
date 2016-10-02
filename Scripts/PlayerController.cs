@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 public class PlayerController : MonoBehaviour {
 
     public float moveSpeed;
@@ -34,11 +35,23 @@ public class PlayerController : MonoBehaviour {
     private float climbVelocity;
     private float gravityStore;
 
+    public Transform comboPoint;
+    public GameObject combo;
+    public GameObject ki;
+    public EnergyBarManager barraDeEnergia;
+    public ComboAtackManager comboManeger;
+ 
+
     // Use this for initialization
     void Start() {
+
+        barraDeEnergia = FindObjectOfType<EnergyBarManager>();
+        comboManeger = FindObjectOfType<ComboAtackManager>();
+
         anim = GetComponent<Animator>();
         myRB = GetComponent<Rigidbody2D>();
         gravityStore = myRB.gravityScale;
+
 
     }
 
@@ -137,6 +150,26 @@ public class PlayerController : MonoBehaviour {
                 //Instantiate(bala, firePoints.position, firePoints.rotation);
             }
         }
+
+
+        //----------------combo-----------------------------
+
+      if (barraDeEnergia.dispararCombo == true)
+        {
+            ki.SetActive(true);
+            if (Input.GetButtonDown("Fire2"))
+            {
+                Instantiate(combo, comboPoint.position, comboPoint.rotation);
+                barraDeEnergia.tiempo = 0;
+                barraDeEnergia.dispararCombo = false;
+                ki.SetActive(false);
+            }
+
+
+        }
+
+
+
 
 
 
