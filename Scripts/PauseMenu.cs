@@ -6,13 +6,15 @@ public class PauseMenu : MonoBehaviour {
     public string levelSelect;
     public string mainMenu;
 
+    public bool pantallaDeMision;
     public bool isPaused;
 
     public GameObject pauseMenuCanvas;
+    public GameObject pantallaMision;
 
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update () {
         if (isPaused)
         {
             pauseMenuCanvas.SetActive(true);
@@ -27,6 +29,16 @@ public class PauseMenu : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.P))
         {
             isPaused = !isPaused;
+        }
+
+        if (pantallaDeMision == true)
+        {
+            pantallaMision.SetActive(true);
+            if (Input.GetKeyDown(KeyCode.Return))
+            {
+                pantallaDeMision = false;
+                pantallaMision.SetActive(false);
+            }
         }
     }
 
@@ -43,5 +55,10 @@ public class PauseMenu : MonoBehaviour {
     public void Quit()
     {
         SceneManager.LoadScene(mainMenu);
+    }
+
+    public void Mision()
+    {
+        pantallaDeMision = true;
     }
 }

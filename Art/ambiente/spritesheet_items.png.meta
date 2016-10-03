@@ -1,10 +1,10 @@
 fileFormatVersion: 2
 guid: dd5c5af7f156a6141a5fd9d12400de87
-timeCreated: 1463065598
+timeCreated: 1475525241
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: spritesheet_items_0
+    21300000: bandera-V-3
     21300002: bandera-V-1
     21300004: bandera-V-2
     21300006: power
@@ -54,7 +54,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: spritesheet_items_0
+    - name: bandera-V-3
       rect:
         serializedVersion: 2
         x: 124
