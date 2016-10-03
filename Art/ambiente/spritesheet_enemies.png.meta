@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 218ecc1ae15b13746bc5c10b964d9e22
-timeCreated: 1475107145
+timeCreated: 1475435033
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -9,6 +9,10 @@ TextureImporter:
     21300004: enemies_dead
     21300006: enemy-f-1
     21300008: enemy-f-2
+    21300010: mosca-1
+    21300012: mosca-2
+    21300014: pez-2
+    21300016: pez-1
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -147,6 +151,93 @@ TextureImporter:
         - {x: 46.5, y: -40}
         - {x: 55.5, y: -3}
         - {x: 55.5, y: 40}
+    - name: mosca-1
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 774
+        width: 120
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -52, y: 36.5}
+        - {x: -60, y: 21.5}
+        - {x: -60, y: 1.5}
+        - {x: -33, y: -35.5}
+        - {x: 19, y: -35.5}
+        - {x: 60, y: -28.5}
+        - {x: 60, y: 31.5}
+        - {x: 56, y: 36.5}
+    - name: mosca-2
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 639
+        width: 107
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 41.5, y: 42}
+        - {x: 17.5, y: 42}
+        - {x: 14.5, y: 41}
+        - {x: 9.5, y: 42}
+        - {x: -39.5, y: 42}
+        - {x: -53.5, y: 38}
+        - {x: -53.5, y: -40}
+        - {x: -43.5, y: -42}
+        - {x: 45.5, y: -42}
+        - {x: 53.5, y: -30}
+        - {x: 53.5, y: 27}
+        - {x: 49.5, y: 37}
+    - name: pez-2
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 1665
+        width: 86
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 31, y: 27.5}
+        - {x: 7, y: 57.5}
+        - {x: -4, y: 57.5}
+        - {x: -24, y: 40.5}
+        - {x: -35, y: 19.5}
+        - {x: -42, y: 2.5}
+        - {x: -42, y: -39.5}
+        - {x: -24, y: -55.5}
+        - {x: 13, y: -55.5}
+        - {x: 16, y: -53.5}
+        - {x: 43, y: -25.5}
+        - {x: 43, y: -2.5}
+        - {x: 36, y: 26.5}
+    - name: pez-1
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 1408
+        width: 84
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20, y: 56}
+        - {x: -17, y: 56}
+        - {x: -42, y: 42}
+        - {x: -42, y: -25}
+        - {x: -41, y: -28}
+        - {x: -11, y: -56}
+        - {x: 22, y: -56}
+        - {x: 42, y: -31}
+        - {x: 42, y: 24}
+        - {x: 41, y: 26}
     outline: []
   spritePackingTag: 
   userData: 
