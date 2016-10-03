@@ -1,0 +1,158 @@
+commit 173118f4b6963ad50d0d4378b82c4780f04bf606
+Author: Angel Mendoza <mendozaangel003@gmail.com>
+Date:   Mon Oct 3 17:03:26 2016 -0400
+
+    casi listo la vistas de los tutoriales
+
+commit 8e48c2fb6154e64db22e377e9b1f5341016b369d
+Author: Angel Mendoza <mendozaangel003@gmail.com>
+Date:   Sun Oct 2 23:49:40 2016 -0400
+
+    casi listos los enemigos! tenemos a los españoles, moscas, abejas, peces jajajajajajaja lo tipico en un plataforma game
+
+commit d9d668b211286e827dc263777684e9387ed776e6
+Author: Angel Mendoza <mendozaangel003@gmail.com>
+Date:   Sun Oct 2 09:48:41 2016 -0400
+
+    ataque listo!
+
+commit 06001a3c4b971ad0c0ff661788252abdd3be5baa
+Author: Angel Mendoza <mendozaangel003@gmail.com>
+Date:   Sat Oct 1 19:47:47 2016 -0430
+
+    ataque combo bola de fuego hecho y ya tiene ki!
+
+commit 7ef9e38a72426eceb52b3c7a655087538a671441
+Author: Angel Mendoza <mendozaangel003@gmail.com>
+Date:   Sat Oct 1 04:28:25 2016 -0430
+
+    barra de energia y nueva presentacion de la barra de vida y de mas, mensajes por la mitad, noche productiva
+
+commit b6d2873cf3903223cfdebe786af2582d7a73bd0c
+Merge: 085a2a2 deb2ac8
+Author: Angel Mendoza <mendozaangel003@gmail.com>
+Date:   Thu Sep 29 09:11:06 2016 -0430
+
+    otra prueba
+
+commit 085a2a284f8e92141a596a61cc216d9f0cb587b9
+Merge: d08b0a6 26bed0e
+Author: Angel Mendoza <mendozaangel003@gmail.com>
+Date:   Thu Sep 29 09:05:21 2016 -0430
+
+    prueba
+
+commit deb2ac8f3d41ac8411ab960491a51d906272c5f4
+Merge: d08b0a6 26bed0e
+Author: Angel Mendoza <mendozaangel003@gmail.com>
+Date:   Thu Sep 29 07:45:23 2016 -0400
+
+    casi listo para el diseño!
+
+commit d08b0a61285c4c8fb64a1b3fa690e5a569794c82
+Author: Angel Mendoza <mendozaangel003@gmail.com>
+Date:   Thu Sep 29 02:10:52 2016 -0430
+
+    barra de vida, abeja, controles para android
+
+commit 26bed0e3b29d64399cc459362ff4e10fef368d06
+Author: Angel Mendoza <Angel Mendoza>
+Date:   Wed Sep 28 19:42:57 2016 -0400
+
+    se me olvida guardar!
+
+commit 85cad657cba371c1d54de51daae0b6e12d55d7ce
+Author: Angel Mendoza <Angel Mendoza>
+Date:   Wed Sep 28 19:42:00 2016 -0400
+
+    que desastre lo del parallax BG :(
+
+commit b42465c89a74081f781f539c31c067ccc233c27f
+Author: Angel Mendoza <mendozaangel003@gmail.com>
+Date:   Wed Sep 28 03:59:32 2016 -0430
+
+    noche larga y horrible pero ya dispara los enemigos y esta la tradicional plataforma que se desplaza
+
+commit 2bb1a140b2378230383076c6b71280fae7230021
+Author: Angel Mendoza <mendozaangel003@gmail.com>
+Date:   Tue Sep 27 13:07:33 2016 -0430
+
+    lo mismo que el commit pasado solo q no habia guardado XD
+
+commit 0aa5c372838cff9888301b59f8672be878c0137d
+Author: Angel Mendoza <mendozaangel003@gmail.com>
+Date:   Tue Sep 27 13:03:50 2016 -0430
+
+    tiene escaleras, sistema de vida, y se mejoraron los controladores
+
+commit 69bbe1747ddaef6908c58d6e125aa9c861b272c5
+Author: Angel Mendoza <mendozaangel003@gmail.com>
+Date:   Thu Sep 22 21:42:01 2016 -0430
+
+    un dia productivo, sistemas de particulas para la muerte del enemigo listo
+
+commit fcf523c219e114d1fe318c91601637559f554825
+Author: Angel Mendoza <mendozaangel003@gmail.com>
+Date:   Thu Sep 22 07:44:07 2016 -0430
+
+    sistemas de particulas cambiado, tanto para renacer como cuando mueres
+
+commit ae6710d75c0abcffb8461150d23ea37a16a400ce
+Author: Angel Mendoza <mendozaangel003@gmail.com>
+Date:   Wed Sep 21 21:03:43 2016 -0430
+
+    ya tiene menu de inicio, menu de seleccion de personajes y menu de pause, el menu de pause hay que agragarlo a cada nivel, esta en la carpeta de prefab...
+
+commit 0e122841d5a6bdac709e9158bed98ce948e8cd3e
+Author: Angel Mendoza <mendozaangel003@gmail.com>
+Date:   Wed Sep 21 12:42:50 2016 -0430
+
+    adelantando
+
+commit 1811b425f7ca7107dff7c7fe3ef848833378936e
+Author: Angel Mendoza <mendozaangel003@gmail.com>
+Date:   Sat Aug 6 02:18:20 2016 -0430
+
+    ya tiene el menu de seleccion de personaje, tiene musica y la imagen de loading con su barra de progreso, los botones de menu estan funcionales y te redireccionan a donde deben
+
+commit db4e7d28bb26c46e37ebcfb36df19da86deb8216
+Author: Angel Mendoza <mendozaangel003@gmail.com>
+Date:   Tue Jul 26 00:22:13 2016 -0430
+
+    el personaje ya tiene toda las acciones con sus respectivas animaciones, camina, salta, dispara y ataca con la espada!
+
+commit 81d06aa5475fe827833ef4f536ee3ec694b65ff6
+Author: Angel Mendoza <mendozaangel003@gmail.com>
+Date:   Mon Jul 25 14:54:50 2016 -0430
+
+    ya se le agrego el efecto q el personaje salte cuando recive daño del enemigo!
+
+commit 64a3c063f7d9acc30847b5f3946d699eec2002a6
+Author: Angel Mendoza <mendozaangel003@gmail.com>
+Date:   Tue Jul 19 04:42:13 2016 -0430
+
+    el juego tiene audio
+
+commit 2eb13aae946334ead63a4b7a82d9830f2f39af71
+Author: Angel Mendoza <mendozaangel003@gmail.com>
+Date:   Tue Jul 19 02:42:06 2016 -0430
+
+    medio funciona el contador de vida, todo lo del video 10
+
+commit 7d801192215dcd1cbc2c7772490c0de4e684a4ec
+Author: Angel Mendoza <mendozaangel003@gmail.com>
+Date:   Mon Jul 18 18:38:22 2016 -0430
+
+    el personaje dispara y elimina a sus enemigos, la bala no coliciona con los otros elementos de la esena solo con el enemigo
+
+commit 53a11245175a3da5357215c59d97789d17fe46d4
+Author: Angel Mendoza <mendozaangel003@gmail.com>
+Date:   Thu Jul 14 19:29:38 2016 -0430
+
+    me quede en el video 9, el contador del score ya esta funcional y el enemigo camina sin caer o tropesar, las monedas estan funcionando, y si caes del borde del ground mueres y renaces
+
+commit 512906f382724fcc872123af4c9223f6b1792d39
+Author: Angel Mendoza <mendozaangel003@gmail.com>
+Date:   Thu Jul 7 16:04:59 2016 -0430
+
+    esta version es el inicio del proyecto, ya tengo el demo, personaje solo camina y salta pero las estacas te matan y la camara te sigue, ya esta listo el efecto de particulas cuando mueres y cuando renaces
