@@ -17,7 +17,7 @@ public class TutorialController : MonoBehaviour {
             pantallaDeTutorial.SetActive(true);
         }
 
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             desactivarTutorial();
         }

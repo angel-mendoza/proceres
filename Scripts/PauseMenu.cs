@@ -26,7 +26,7 @@ public class PauseMenu : MonoBehaviour {
             Time.timeScale = 1f;
         }
 
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.Return))
         {
             isPaused = !isPaused;
         }
@@ -34,7 +34,7 @@ public class PauseMenu : MonoBehaviour {
         if (pantallaDeMision == true)
         {
             pantallaMision.SetActive(true);
-            if (Input.GetKeyDown(KeyCode.Return))
+            if (Input.GetKeyDown(KeyCode.Escape))
             {
                 pantallaDeMision = false;
                 pantallaMision.SetActive(false);
