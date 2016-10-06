@@ -1,19 +1,57 @@
 fileFormatVersion: 2
 guid: fe89e8a1cb3a33640ba7cdec89a5db65
-timeCreated: 1475435186
+timeCreated: 1475705444
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: Ground
     21300002: GROUND
     21300004: bala
-    21300006: caja
+    21300006: caja-1
     21300008: escalera
     21300010: p1
     21300012: p2
     21300014: p3
     21300016: Ground-1
     21300018: agua-disparador
+    21300020: hongo-1
+    21300022: hongo-2
+    21300024: grama
+    21300026: piedra
+    21300028: suelo-a-1
+    21300030: suelo-a-2
+    21300032: suelo-b-1
+    21300034: suelo-b-2
+    21300036: escalera-rota
+    21300038: tierra-redondeada
+    21300040: tierra-cuadra
+    21300042: cactus
+    21300044: cadena
+    21300046: llave-azul
+    21300048: llave-verde
+    21300050: llave-dorada
+    21300052: llave-naranja
+    21300054: mar-de-arena-2
+    21300056: mar-de-arena-1
+    21300058: arena
+    21300060: cerradura-azul
+    21300062: cerradura-verde
+    21300064: cerradura-naranja
+    21300066: cerradura-dorada
+    21300068: barda
+    21300070: peso-1
+    21300072: peso-2
+    21300074: caja-2
+    21300076: caja-3
+    21300078: puente-1
+    21300080: puente-2
+    21300082: ladrillo
+    21300084: puerta-abierta-1
+    21300086: puerta-abierta-2
+    21300088: puerta-cerrada-1
+    21300090: puerta-cerrada-2
+    21300092: agua-superf
+    21300094: arbusto
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -63,20 +101,22 @@ TextureImporter:
     - name: Ground
       rect:
         serializedVersion: 2
-        x: 498
-        y: 716
-        width: 70
-        height: 68
+        x: 496
+        y: 715
+        width: 71
+        height: 70
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 3, y: 0, z: 2, w: 2}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -35, y: 34}
-        - {x: -35, y: -34}
-        - {x: 33, y: -34}
-        - {x: 35, y: -32}
-        - {x: 35, y: 32}
-        - {x: 34, y: 34}
+      - - {x: -32.5, y: 35}
+        - {x: -35.5, y: 32}
+        - {x: -35.5, y: -32}
+        - {x: -32.5, y: -35}
+        - {x: 33.5, y: -35}
+        - {x: 35.5, y: -33}
+        - {x: 35.5, y: 33}
+        - {x: 33.5, y: 35}
     - name: GROUND
       rect:
         serializedVersion: 2
@@ -103,7 +143,7 @@ TextureImporter:
       pivot: {x: 0.70880127, y: 0.40719944}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: caja
+    - name: caja-1
       rect:
         serializedVersion: 2
         x: 142
@@ -217,6 +257,608 @@ TextureImporter:
         - {x: -35, y: -35}
         - {x: 35, y: -35}
         - {x: 35, y: 35}
+    - name: hongo-1
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 716
+        width: 42
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hongo-2
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 644
+        width: 41
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: grama
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 573
+        width: 35
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8.5, y: 19.5}
+        - {x: -14.5, y: 19.5}
+        - {x: -17.5, y: 14.5}
+        - {x: -17.5, y: -14.5}
+        - {x: -13.5, y: -19.5}
+        - {x: 12.5, y: -19.5}
+        - {x: 17.5, y: -14.5}
+        - {x: 17.5, y: 7.5}
+        - {x: 11.5, y: 18.5}
+    - name: piedra
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 573
+        width: 70
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 21}
+        - {x: -18, y: 21}
+        - {x: -35, y: -3}
+        - {x: -35, y: -15}
+        - {x: -30, y: -21}
+        - {x: 35, y: -21}
+        - {x: 35, y: -1}
+        - {x: 17, y: 17}
+    - name: suelo-a-1
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 785
+        width: 71
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33.5, y: 35.5}
+        - {x: -35.5, y: 33.5}
+        - {x: -35.5, y: 8.5}
+        - {x: 8.5, y: -35.5}
+        - {x: 35.5, y: -35.5}
+        - {x: 35.5, y: 35.5}
+    - name: suelo-a-2
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 644
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 33, y: 35}
+        - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: -8, y: -35}
+        - {x: 35, y: 8}
+        - {x: 35, y: 33}
+    - name: suelo-b-1
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 644
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -13}
+        - {x: -6, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+    - name: suelo-b-2
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 715
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 2, y: -35}
+        - {x: 35, y: -18}
+        - {x: 35, y: 35}
+    - name: escalera-rota
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 785
+        width: 72
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20, y: 3}
+        - {x: 18, y: -31}
+        - {x: 36, y: -31}
+        - {x: 36, y: 31}
+        - {x: -36, y: 31}
+        - {x: -36, y: -31}
+        - {x: -14, y: -31}
+        - {x: 4, y: -14}
+        - {x: -2, y: -4}
+        - {x: -14, y: 2}
+    - name: tierra-redondeada
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 715
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -34, y: 35}
+        - {x: -35, y: 34}
+        - {x: -35, y: -33}
+        - {x: -33, y: -35}
+        - {x: 33, y: -35}
+        - {x: 35, y: -33}
+        - {x: 35, y: 33}
+        - {x: 33, y: 35}
+    - name: tierra-cuadra
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 786
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+    - name: cactus
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 786
+        width: 40
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 29}
+        - {x: -20, y: 15}
+        - {x: -20, y: -25}
+        - {x: -12, y: -30}
+        - {x: 11, y: -30}
+        - {x: 20, y: -2}
+        - {x: 20, y: 29}
+    - name: cadena
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 716
+        width: 20
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: llave-azul
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 804
+        width: 63
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 30.5, y: 10}
+        - {x: 2.5, y: 19}
+        - {x: -30.5, y: 19}
+        - {x: -31.5, y: 15}
+        - {x: -31.5, y: -18}
+        - {x: -30.5, y: -19}
+        - {x: 30.5, y: -19}
+        - {x: 31.5, y: -17}
+        - {x: 31.5, y: 9}
+    - name: llave-verde
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 734
+        width: 60
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1, y: 18.5}
+        - {x: -29, y: 18.5}
+        - {x: -30, y: 16.5}
+        - {x: -30, y: -18.5}
+        - {x: 30, y: -18.5}
+        - {x: 30, y: 6.5}
+        - {x: 29, y: 7.5}
+    - name: llave-dorada
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 663
+        width: 63
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.5, y: 18.5}
+        - {x: -31.5, y: -18.5}
+        - {x: 31.5, y: -18.5}
+        - {x: 31.5, y: 8.5}
+        - {x: 1.5, y: 18.5}
+    - name: llave-naranja
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 663
+        width: 60
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1, y: 18.5}
+        - {x: -29, y: 18.5}
+        - {x: -30, y: 16.5}
+        - {x: -30, y: -18.5}
+        - {x: 30, y: -18.5}
+        - {x: 30, y: 6.5}
+        - {x: 29, y: 7.5}
+    - name: mar-de-arena-2
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 502
+        width: 70
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 12.5}
+        - {x: -35, y: 8.5}
+        - {x: -35, y: -33.5}
+        - {x: -34, y: -34.5}
+        - {x: 35, y: -34.5}
+        - {x: 35, y: 11.5}
+        - {x: 28, y: 12.5}
+    - name: mar-de-arena-1
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 431
+        width: 69
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -34.5, y: 12.5}
+        - {x: -34.5, y: -34.5}
+        - {x: 34.5, y: -34.5}
+        - {x: 34.5, y: 12.5}
+    - name: arena
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 644
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+    - name: cerradura-azul
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 573
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+    - name: cerradura-verde
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 502
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+    - name: cerradura-naranja
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 502
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+    - name: cerradura-dorada
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 431
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+    - name: barda
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 360
+        width: 70
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 30.5}
+        - {x: -35, y: -30.5}
+        - {x: 35, y: -30.5}
+        - {x: 35, y: 30.5}
+    - name: peso-1
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 360
+        width: 65
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22.5, y: 35}
+        - {x: -31.5, y: 29}
+        - {x: -32.5, y: 12}
+        - {x: -32.5, y: -35}
+        - {x: 32.5, y: -35}
+        - {x: 32.5, y: 14}
+        - {x: 20.5, y: 35}
+    - name: peso-2
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 431
+        width: 67
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29.5, y: 35}
+        - {x: -33.5, y: 25}
+        - {x: -33.5, y: -35}
+        - {x: 33.5, y: -35}
+        - {x: 33.5, y: 29}
+        - {x: 21.5, y: 35}
+    - name: caja-2
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 573
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -33}
+        - {x: -33, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+    - name: caja-3
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 502
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -33}
+        - {x: -33, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+    - name: puente-1
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 503
+        width: 70
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: puente-2
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 502
+        width: 70
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ladrillo
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 573
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -33}
+        - {x: -33, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+    - name: puerta-abierta-1
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 360
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+    - name: puerta-abierta-2
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 431
+        width: 70
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27, y: 20}
+        - {x: -35, y: 18}
+        - {x: -35, y: -20}
+        - {x: 35, y: -20}
+        - {x: 35, y: 11}
+        - {x: 29, y: 20}
+    - name: puerta-cerrada-1
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 431
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 35}
+        - {x: -35, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 35}
+    - name: puerta-cerrada-2
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 360
+        width: 70
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 20.5}
+        - {x: -35, y: 9.5}
+        - {x: -35, y: -20.5}
+        - {x: 35, y: -20.5}
+        - {x: 35, y: 5.5}
+        - {x: 26, y: 20.5}
+    - name: agua-superf
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 360
+        width: 70
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25, y: 22}
+        - {x: -35, y: 21}
+        - {x: -35, y: -22}
+        - {x: 35, y: -22}
+        - {x: 35, y: 22}
+    - name: arbusto
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 786
+        width: 70
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     outline: []
   spritePackingTag: 
   userData: 
