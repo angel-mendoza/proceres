@@ -12,9 +12,12 @@ public class MainMenu : MonoBehaviour {
 
     public string level1Tag;
 
+    public GameObject load;
+
     public void NewGame()
     {
-        
+        load.SetActive(true);
+
         PlayerPrefs.SetInt("PlayerCurrentLives", playerLive);
 
         PlayerPrefs.SetInt("CurrentPlayerCoints", 0);

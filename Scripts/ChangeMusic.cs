@@ -3,7 +3,8 @@ using System.Collections;
 
 public class ChangeMusic : MonoBehaviour {
 
-    public AudioClip leve2Music;
+    public AudioClip musicaEntrada;
+    public AudioClip musicaLevel;
     private AudioSource sourse;
 
 	// Use this for initialization
@@ -13,9 +14,15 @@ public class ChangeMusic : MonoBehaviour {
 	
     void OnLevelWasLoaded(int level)
     {
-        if (level != 0)
+        if (level == 0 || level == 1)
         {
-            sourse.clip = leve2Music;
+            sourse.clip = musicaEntrada;
+            sourse.Play();
+        }
+
+        if (level > 1)
+        {
+            sourse.clip = musicaLevel;
             sourse.Play();
         }
     }
